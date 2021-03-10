@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio</title>
-    <link>http://example.org/</link>
+    <link>https://limzportfolio.github.io/</link>
     <description>Recent content on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Dec 2020 21:21:55 +0900</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Dec 2020 21:21:55 +0900</lastBuildDate><atom:link href="https://limzportfolio.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
