@@ -33,11 +33,29 @@
 <hr>
 <div id="content">
 <div class="container">
-    <h2 id="smooth-trail">Smooth trail</h2>
+    <h2 id="unity-automatic-light-probe-generator">Unity automatic light probe generator</h2>
+<br/><br/>
+<p><strong>Precomputed Lighting in CoD IW 2017</strong> 발표 자료의 <strong>Light Grid</strong> 항목에 근거하여 작성한 <em>Light porbe generator</em>입니다.<br>
+<em>Probe searching</em>의 경우, 상기 발표 자료와 더불어 <strong>Robert Cupisz</strong>가 기술한 <strong>Light probe interpolation using tetrahedral tessellations</strong>를 토대로 작성하였습니다.</p>
+<br/><br/>
+<h4 id="preview">Preview:</h4>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/9jlmRDcV6eA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br/><br/>
+<h4 id="what-jobs-i-did">What jobs I did:</h4>
+<br/><br/>
+<h4 id="used-languageslibraries">Used languages/libraries:</h4>
+<p>C++(Visual C++), C#(Unity), Cg(Unity), ComputeShader(Unity), Intel TBB</p>
+<p><br/><br/>
+<br/><br/></p>
+<h2 id="smooth-trail">Smooth trail</h2>
 <br/><br/>
 <p>Developed smooth trail line using Cardinal Spline and SQUAD Quadratic interpolation.</p>
 <br/><br/>
-<h4 id="preview">Preview:</h4>
+<h4 id="preview-1">Preview:</h4>
 <p>In game usage: 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -52,12 +70,12 @@ Quadratic interpolation comparison between SQUAD and Estimated SQUAD:
 </div>
 </p>
 <br/><br/>
-<h4 id="what-jobs-i-did">What jobs I did:</h4>
+<h4 id="what-jobs-i-did-1">What jobs I did:</h4>
 <p>Unlike basic trail line, I interpolated every two points of frame by frame to make it looks smooth.</p>
 <p>Since SQUAD interpolation is pretty expensive to compute, I estimated it using linear interpolation with normalization. Then I could improve the calculation speed up to N%.</p>
 <p>Also, both SQUAD and estimated SQUAD are not so different visually.</p>
 <br/><br/>
-<h4 id="used-languages">Used language(s):</h4>
+<h4 id="used-languageslibraries-1">Used languages/libraries:</h4>
 <p>DirectX 9.0c, Visual C++</p>
 <p><br/><br/>
 <br/><br/></p>
@@ -65,7 +83,7 @@ Quadratic interpolation comparison between SQUAD and Estimated SQUAD:
 <br/><br/>
 <p>Unity based mobile game <a href="https://play.google.com/store/apps/details?id=com.rhaon.ghostwar&amp;hl=en&amp;gl=US">Ghost War</a> character shader.</p>
 <br/><br/>
-<h4 id="preview-1">Preview:</h4>
+<h4 id="preview-2">Preview:</h4>
 <p>Common objects: 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -87,12 +105,12 @@ Gameplay sample:
 </div>
 </p>
 <br/><br/>
-<h4 id="what-jobs-i-did-1">What jobs I did:</h4>
+<h4 id="what-jobs-i-did-2">What jobs I did:</h4>
 <p>Toon shading and directional rim lighting are applied for basic looking. And I used dithering effect for object fading.</p>
 <p>Also I implemented Spherical Environment Mapping to express metalic surface.</p>
 <p>In order to avoid face splitting of an outline mesh, I calculated average normal direction for vertices which placed on a same position.</p>
 <br/><br/>
-<h4 id="used-languages-1">Used language(s):</h4>
+<h4 id="used-languageslibraries-2">Used languages/libraries:</h4>
 <p>C#(Unity), Cg(Unity)</p>
 
 </div>
