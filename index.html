@@ -58,13 +58,14 @@ Probe searching의 경우, 상기 발표 자료와 더불어 <strong>Robert Cupi
 <p><a href="https://github.com/limztudio/colldetect"><strong>Depth map generator</strong></a>: 특정 위치로부터 Render mesh들과 충돌 검사를 하여 Depth map을 생성하도록 하는 C++ 프로젝트입니다. TBB를 활용하여 Multi thread환경에서 동작합니다.</p>
 <br/><br/>
 <h3 id="primary-languageslibraries-i-used">Primary languages/libraries I used:</h3>
-<p>C++(Visual C++), C#(Unity), HLSL(Unity; ComputeShader), Intel TBB, DirectXMath</p>
+<p>C++(Visual C++), C#(Unity), HLSL(Unity; Compute shader), Intel TBB, DirectXMath</p>
 <p><br/><br/>
 <br/><br/></p>
 <h1 id="ghost-war-character-shader">Ghost war character shader</h1>
 <h5 id="february-2020---march-2020">[February 2020 - March 2020]</h5>
 <br/><br/>
-<p>유니티 기반의 모바일 게임 <a href="https://play.google.com/store/apps/details?id=com.rhaon.ghostwar">Ghost War</a>의 캐릭터 Shader를 제작하였습니다.</p>
+<p>&nbsp;
+유니티 기반 모바일 게임 <a href="https://play.google.com/store/apps/details?id=com.rhaon.ghostwar">Ghost War</a>의 캐릭터 Shader를 제작하였습니다.</p>
 <br/><br/>
 <h3 id="preview-1">Preview:</h3>
 <p>Common objects: 
@@ -89,18 +90,36 @@ Gameplay sample:
 </p>
 <br/><br/>
 <h3 id="what-jobs-i-did">What jobs I did:</h3>
-<p>Cell shading 기반에 Directional rim를 추가하였고 Alpha blend를 사용하는 대신, Alpha test와 Dither texture를 활용하여 Fade효과를 주었습니다.<br>
+<p>&nbsp;
+Cell shading 기반에 Directional rim를 추가하였고 Alpha blend를 사용하는 대신, Alpha test와 Dither texture를 활용하여 Fade효과를 주었습니다.<br>
 또한 Spherical environment mapping을 통해 반사 표현을 하였고 삼각함수를 활용하여 홀로그램 Vertex shader의 노이즈 효과를 주었습니다.</p>
 <br/><br/>
 <h3 id="primary-languageslibraries-i-used-1">Primary languages/libraries I used:</h3>
 <p>C#(Unity), HLSL(Unity)</p>
 <p><br/><br/>
 <br/><br/></p>
+<h1 id="graphic-improvement-project">Graphic improvement project</h1>
+<h5 id="february-2018---march-2019">[February 2018 - March 2019]</h5>
+<br/><br/>
+<p>&nbsp;
+PC기반 러닝 게임 <a href="https://tr.game.onstove.com/index.asp"><strong>테일즈 런너</strong></a>에 새로운 맵툴 적용과 더불어 Lightmap 및 Light probe 적용. 그리고 각종 Post effect를 추가하였습니다.</p>
+<br/><br/>
+<h3 id="preview-2">Preview:</h3>
+<p>Add screen shot here:</p>
+<br/><br/>
+<h3 id="what-jobs-i-did-1">What jobs I did:</h3>
+<p>&nbsp;
+Add description here.</p>
+<br/><br/>
+<h3 id="primary-languageslibraries-i-used-2">Primary languages/libraries I used:</h3>
+<p>C++(Visual C++), DirectX 9, DirectX 11, HLSL(Vertex/Pixel shader, Compute shader), Intel TBB, DirectXMath</p>
+<p><br/><br/>
+<br/><br/></p>
 <h1 id="smooth-trail">Smooth trail</h1>
 <br/><br/>
 <p>Developed smooth trail line using Cardinal Spline and SQUAD Quadratic interpolation.</p>
 <br/><br/>
-<h3 id="preview-2">Preview:</h3>
+<h3 id="preview-3">Preview:</h3>
 <p>In game usage: 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -115,12 +134,12 @@ Quadratic interpolation comparison between SQUAD and Estimated SQUAD:
 </div>
 </p>
 <br/><br/>
-<h3 id="what-jobs-i-did-1">What jobs I did:</h3>
+<h3 id="what-jobs-i-did-2">What jobs I did:</h3>
 <p>Unlike basic trail line, I interpolated every two points of frame by frame to make it looks smooth.</p>
 <p>Since SQUAD interpolation is pretty expensive to compute, I estimated it using linear interpolation with normalization. Then I could improve the calculation speed up to N%.</p>
 <p>Also, both SQUAD and estimated SQUAD are not so different visually.</p>
 <br/><br/>
-<h3 id="primary-languageslibraries-i-used-2">Primary languages/libraries I used:</h3>
+<h3 id="primary-languageslibraries-i-used-3">Primary languages/libraries I used:</h3>
 <p>DirectX 9.0c, Visual C++</p>
 <p><br/><br/>
 <br/><br/></p>
