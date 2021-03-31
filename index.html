@@ -51,8 +51,8 @@
 <ul>
 <li><a href="#unity-automatic-light-probe-generatorin-progress"><strong>[2021]</strong> <strong>Unity automatic light probe generator</strong></a></li>
 <li><a href="#ghost-war-character-shader"><strong>[2020]</strong> <strong>Ghost war character shader</strong></a></li>
-<li><a href="#graphic-improvement-project"><strong>[2018]</strong> <strong>Graphic improvement project</strong></a></li>
 <li><a href="#tps-shooting-mode"><strong>[2019]</strong> <strong>TPS Shooting mode</strong></a></li>
+<li><a href="#graphic-improvement-project"><strong>[2018]</strong> <strong>Graphic improvement project</strong></a></li>
 <li><a href="#terraria-game-mod"><strong>[2016]</strong> <strong>Terraria game mod</strong></a></li>
 </ul>
 <p><br/><br/>
@@ -108,7 +108,7 @@ Hologram mode:
 </div>
 
 <br/><br/>
-Game-play sample: 
+Game play sample: 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/I9DEkEjP5hw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -125,13 +125,55 @@ Cell shading 기반에 Directional rim를 추가하였고 Alpha blend를 사용�
 <p><br/><br/>
 <br/><br/></p>
 <hr>
+<h1 id="tps-shooting-mode">TPS Shooting mode</h1>
+<h5 id="november-2019---december-2020">[November 2019 - December 2020]</h5>
+<br/><br/>
+<p>&nbsp;
+PC기반 러닝 게임 <a href="https://tr.game.onstove.com/index.asp"><strong>테일즈 런너</strong></a>에 새로운 TPS장르의 게임 모드를 제작하였습니다.</p>
+<br/><br/>
+<h3 id="preview-2">Preview:</h3>
+<p>Game play video: 
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/L3dBAUAtXls" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/AvC5Z_6T_pc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br/><br/>
+In-game screenshot: 
+
+
+<a href="https://github.com/limzportfolio/Attachments/raw/master/tps_shooting_mode/scr0.jpg"><img src="https://github.com/limzportfolio/Attachments/raw/master/tps_shooting_mode/scr0.jpg" width="100%"/></a>
+
+
+<a href="https://github.com/limzportfolio/Attachments/raw/master/tps_shooting_mode/scr1.jpg"><img src="https://github.com/limzportfolio/Attachments/raw/master/tps_shooting_mode/scr1.jpg" width="100%"/></a>
+
+
+<a href="https://github.com/limzportfolio/Attachments/raw/master/tps_shooting_mode/scr2.jpg"><img src="https://github.com/limzportfolio/Attachments/raw/master/tps_shooting_mode/scr2.jpg" width="100%"/></a></p>
+<br/><br/>
+<h3 id="what-jobs-i-did-1">What jobs I did:</h3>
+<p>&nbsp;
+Aim pose를 위한 애니메이션 포맷을 개발 및 해당 포맷을 제작하기 위한 자체 스크립트를 제작하였습니다.<br>
+기존 애니메이션 및 새로 제작된 애니메이션 포맷의 연산 속도를 고려하여 SSE3로 새롭게 작성하였습니다.</p>
+<p>Cardinal spline과 Estimated SQUAD quaternion interpolation을 이용하여 기존에 존재하는 Trail 파티클보다 더욱 부드러운 형상의 파티클을 구현하였으며, 연산 비용을 감안하여 Multi thread를 이용해 파티클을 처리하도록 하였습니다.</p>
+<p>캐릭터의 무적 모드와 같은 효과를 보여주기 위해 캐릭터 Shader를 새로 작성하였습니다.</p>
+<br/><br/>
+<h3 id="primary-languageslibraries-i-used-2">Primary languages/libraries I used:</h3>
+<p>C++(Visual C++), DirectX 9, HLSL(Vertex/Pixel shader)</p>
+<p><br/><br/>
+<br/><br/></p>
+<hr>
 <h1 id="graphic-improvement-project">Graphic improvement project</h1>
 <h5 id="february-2018---june-2019">[February 2018 - June 2019]</h5>
 <br/><br/>
 <p>&nbsp;
 PC기반 러닝 게임 <a href="https://tr.game.onstove.com/index.asp"><strong>테일즈 런너</strong></a>에 새로운 맵툴 적용과 더불어 Lightmap 및 Light probe 적용. 그리고 각종 Post effect를 추가하였습니다.</p>
 <br/><br/>
-<h3 id="preview-2">Preview:</h3>
+<h3 id="preview-3">Preview:</h3>
 <p>In-game screenshot: 
 
 
@@ -165,7 +207,7 @@ Generated lightmap:
 
 <a href="https://github.com/limzportfolio/Attachments/raw/master/graphic_improvement_project/lig1.png"><img src="https://github.com/limzportfolio/Attachments/raw/master/graphic_improvement_project/lig1.png" width="75%"/></a></p>
 <br/><br/>
-<h3 id="what-jobs-i-did-1">What jobs I did:</h3>
+<h3 id="what-jobs-i-did-2">What jobs I did:</h3>
 <p>&nbsp;
 DirectX 11과 Radiosity기법을 이용하여 Lightmap 및 Light probe를 제작하는 툴을 만들었습니다.<br>
 동적 오브젝트와 관련된 Shader에 Light probe의 영향을 받도록 적용하였고 Near/Far plane에 의한 부드러운 Clipping을 위해 Dither fade를 적용하였습니다.</p>
@@ -173,39 +215,8 @@ DirectX 11과 Radiosity기법을 이용하여 Lightmap 및 Light probe를 제작
 <p>Depth buffer를 이용하여 Soft particle을 작성하였습니다.</p>
 <p>캐릭터 Shader의 복장 염색 기능을 적용하였습니다.</p>
 <br/><br/>
-<h3 id="primary-languageslibraries-i-used-2">Primary languages/libraries I used:</h3>
-<p>C++(Visual C++), DirectX 9, DirectX 11, HLSL(Vertex/Pixel shader, Compute shader), Intel TBB, DirectXMath</p>
-<p><br/><br/>
-<br/><br/></p>
-<hr>
-<h1 id="tps-shooting-mode">TPS Shooting mode</h1>
-<h5 id="november-2019---december-2020">[November 2019 - December 2020]</h5>
-<br/><br/>
-<p>&nbsp;
-PC기반 러닝 게임 <a href="https://tr.game.onstove.com/index.asp"><strong>테일즈 런너</strong></a>에 새로운 TPS장르의 게임 모드를 제작하였습니다.</p>
-<br/><br/>
-<h3 id="preview-3">Preview:</h3>
-<p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/L3dBAUAtXls" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<br/><br/>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/AvC5Z_6T_pc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-</p>
-<br/><br/>
-<h3 id="what-jobs-i-did-2">What jobs I did:</h3>
-<p>&nbsp;
-Aim pose를 위한 애니메이션 포맷을 개발 및 해당 포맷을 제작하기 위한 자체 스크립트를 제작하였습니다.<br>
-기존 애니메이션 및 새로 제작된 애니메이션 포맷의 연산 속도를 고려하여 SSE3로 새롭게 작성하였습니다.</p>
-<p>Cardinal spline과 Estimated SQUAD quaternion interpolation을 이용하여 기존에 존재하는 Trail 파티클보다 더욱 부드러운 형상의 파티클을 구현하였으며, 연산 비용을 감안하여 Multi thread를 이용해 파티클을 처리하도록 하였습니다.</p>
-<p>캐릭터의 무적 모드와 같은 효과를 보여주기 위해 캐릭터 Shader를 새로 작성하였습니다.</p>
-<br/><br/>
 <h3 id="primary-languageslibraries-i-used-3">Primary languages/libraries I used:</h3>
-<p>C++(Visual C++), DirectX 9, HLSL(Vertex/Pixel shader)</p>
+<p>C++(Visual C++), DirectX 9, DirectX 11, HLSL(Vertex/Pixel shader, Compute shader), Intel TBB, DirectXMath</p>
 <p><br/><br/>
 <br/><br/></p>
 <hr>
